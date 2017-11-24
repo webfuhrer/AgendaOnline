@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Insertar contactos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="ServletAgenda" method="POST">
+            Nombre:<input type="text" name="nombre" placeholder="Introduzca su nombre">
+            Apellido<input type="text" name="apellido" placeholder="Introduzca su apellido">
+            EMail<input type="text" name="email" placeholder="Introduzca su email">
+            <input type="hidden" name="accion" value="insertar">
+            <input type="submit" value="Grabar">
+        </form>
+        <br>
+        <a href="listar_contactos.jsp">Listar los contactos</a>
+        <br>
+        <a href="buscar.html">Buscar contactos</a>
+    </body>
+</html>
